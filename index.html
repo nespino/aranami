@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<?php
+  echo 's';
+  include_once("config.php");
+  echo 'sd';
+?>
+  <html lang="en">
+  <head>
+    <title>Aranami S.A. - <?php echo $title ?></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+      <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    <style>
+      html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+
+      .w3-sidebar {
+        z-index: 3;
+        width: 200px;
+        top: 43px;
+        bottom: 0;
+        height: inherit;
+      }
+
+      .float{
+	      position:fixed;
+	      width:60px;
+	      height:60px;
+	      bottom:40px;
+	      right:40px;
+	      background-color:#25d366;
+	      color:#FFF;
+	      border-radius:50px;
+	      text-align:center;
+        font-size:30px;
+	      box-shadow: 2px 2px 3px #999;
+        z-index:100;
+      }
+
+      .my-float{
+	      margin-top:16px;
+      }
+
+      .mySlides {
+        display: none;
+      }
+
+      .w3-button {
+        background-color: #07923a;
+      }
+
+      .w3-button.selected {
+        color: #000!important;
+        background-color: #ccc!important;
+      }
+      
+      .navImg {
+        width: 105px;
+        height: 50px;
+        border: 1px solid rgba(7, 10, 7, 0.96);
+        border-radius: 20px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        cursor: pointer;
+      }
+
+      .navImg:hover {
+        border: 2px solid #07923a;
+      }
+
+      .navImg:active {
+        border: 1px solid #07923a;
+      }
+
+      .navImg:focus {
+        border: 1px solid #07923a;
+      }
+      
+      .logo {
+        position: flex-start;
+        background-color: #07923a;
+        width: 100%;
+        height: 100%;
+      
+      }      
+
+
+      @media (min-width: 993px) {
+        body nav.w3-sidebar.w3-bar-block {
+          display: none !important;
+        }
+      }  
+
+      @media (max-width: 992px) {
+        .navImg {
+          width: 80px;
+          height: 40px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .navImg {
+          width: 60px;
+          height: 30px;
+        }
+      }
+
+      #carouselExampleIndicators {
+        width: 80%;
+        height: 1%;
+        margin-top: 4em;
+        margin-left: 5em;
+      }
+
+      @media (max-width: 992px) {
+        .logo {
+          position: left;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Navbar -->
+    <nav class="w3-top">
+      <div class="w3-bar w3-theme w3-top d-flex">
+        <a class="logo" href="#"><img class="navImg" src="img/menu_01.jpg" alt="logo"></a>
+        <a class="w3-bar-item w3-button w3-hide-large w3-hover-white w3-large w3-theme-l1 d-flex" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+
+        <?php 
+          foreach ($zones as $zone_key => $zone_info) {
+            if ($zone_key == $zone) {
+              echo '<span class="w3-bar-item w3-button w3-hide-small w3-hide-medium ">' . $zone_info['title'] . 
+                '</span>';
+            } else {
+              echo '<a href="' . $zone_key . '" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">' . $zone_info['title'] . 
+                '</a>';
+            }
+            
+          }
+        ?>
+        
+        </>
+      </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          
+            
+      <div class="carousel-indicators img-fluid">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/agroquimicos-1200x762_c1-688x387.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/Cuenta_Agro.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/agroquimicos-1200x762_c1-688x387.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+  
+  
+    </div>
+
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <h4 class="w3-bar-item"><b>Menu</b></h4>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#">Inicio</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#">Productos</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#">Comercialización</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#">Contacto</a>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main">
+
+      
+      <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+          <?php include_once($zone . '.php'); 
+          ?>
+        </div>
+      <div class="w3-third w3-container">
+        <a href="comercio"><p class="w3-border w3-padding-medium w3-padding-32 w3-center">Departamento de Comercio Exterior</p></a>
+        <a href="soja"><p class="w3-border w3-padding-xsmall w3-padding-8 w3-center">Cultivo de Soja</p></a>
+        <a href="trigo"><p class="w3-border w3-padding-xsmall w3-padding-8 w3-center">Cultivo de Trigo</p></a>
+        <a href="maiz"><p class="w3-border w3-padding-xsmall w3-padding-8 w3-center">Cultivo de Maíz</p></a>
+        <a href="girasol"><p class="w3-border w3-padding-xsmall w3-padding-8 w3-center">Cultivo de Girasol</p></a>
+        <a href="https://www.ggsa.com.ar/#/"><p class="w3-border w3-padding-medium w3-padding-32 w3-center">Mercado de Cereales</p></a>
+        <a href="https://www.accuweather.com/es/ar/buenos-aires/7894/daily-weather-forecast/7894"><p class="w3-border w3-padding-medium w3-padding-32 w3-center">Clima</p></a>
+        <a href="dolarhoy.com.ar"><p class="w3-border w3-padding-medium w3-padding-32 w3-center">Cotización del Dólar</p></a>
+        <a href="er"><p class="w3-border w3-padding-medium w3-padding-32 w3-center">Emergencias</p></a>
+      </div>
+    </div>
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-52">
+      <h4>Footer</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="#" target="_blank">LODO</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+  <script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
+
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+      } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+      }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+      overlayBg.style.display = "none";
+    }
+  </script>
+  </body>
+</html>

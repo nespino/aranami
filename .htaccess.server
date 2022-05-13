@@ -1,0 +1,11 @@
+# Activar reescritura de URL
+RewriteEngine On
+# Si es un directorio o archivo, usar directamente
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+# Sino enviar a index.html (Opciones: QSA=query string append, L=last rule)
+RewriteRule ^(.*)$ index.html?r=$1 [QSA,L]
+
+<IfModule mime_module>
+AddType application/x-httpd-ea-php73 .php .php5 .html
+</IfModule>
