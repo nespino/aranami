@@ -3,6 +3,11 @@ RewriteEngine On
 # Si es un directorio o archivo, usar directamente
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
+# Si es una imagen, usar directamente
+RewriteCond %{REQUEST_URI} !\.(jpg|jpeg|gif|png|bmp|ico)$
+# Si es un js, map o css, usar directamente
+RewriteCond %{REQUEST_URI} !\.(js|map|css)$
+
 # Sino enviar a index.html (Opciones: QSA=query string append, L=last rule)
 RewriteRule ^(.*)$ index.html?r=$1 [QSA,L]
 

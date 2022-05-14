@@ -17,7 +17,6 @@ $zones = [
     'title' => 'Soja',
     'img' => 'img/cultivo_soja.jpg',
   ),
-  
 ];
 
 if (!in_array($zone, array_keys($zones))) {
