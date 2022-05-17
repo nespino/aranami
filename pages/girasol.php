@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <div>
-    <h2>Cultivo de Girasol</h2>
-    <img src="img/cultivo_girasol.jpg" alt="">
-  </div>
-</body>
-</html>
+
+  <h2>Cultivo de Girasol</h2>
+  <img src="img/cultivo_girasol.jpg" alt="">
+<p>	Aplicación de nuestros productos para el control de hongos de suelo, 
+  insectos de suelo, malezas de hoja ancha y gramíneas en general, 
+  isocas, orugas cortadoras, gata peluda, gusanos blancos y bicho torito entre otros.</p>
+<p></p>(*) Producto en proceso de registración</p>
