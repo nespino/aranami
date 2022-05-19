@@ -10,7 +10,7 @@ $zones = [
     'main_nav' => true,
   ),
   'comercializacion' => array(
-    'title' => 'Comercialización',
+    'title' => 'Comercializacion',
     'main_nav' => true,
   ),
   'contacto' => array(
@@ -39,6 +39,22 @@ $zones = [
   ),
   'comercio' => array(
     'title' => 'Comercio',
+  ),
+  'insecticidas' => array(
+    'title' => 'Insecticidas',
+  ),
+  'herbicidas' => array(
+    'title' => 'Herbicidas',
+  ),
+  'curasemillas' => array(
+    'title' => 'Curasemillas',
+  ),
+  'funguicidas' => array(
+    'title' => 'Funguicidas',
+  ),
+  'araimidacloprid' => array(
+    'title' => 'Araimidacloprid',
+    'img' => 'img/araimidacloprid35.jpg', 'img2' => 'img/araimidacloprid.jpg',
   ),
 ];
 

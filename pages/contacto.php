@@ -47,6 +47,6 @@
     </div>
   </div>
   <div class="col-12">
-    <button class="btn btn-primary" type="submit">enviar</button>
+    <button class="btn btn-success" type="submit">enviar</button>
   </div>
 </form>
