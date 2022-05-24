@@ -153,7 +153,6 @@
     if ($zone == "inicio") {
       ?>
 
-
       <!---Carousel Wrapper--->
       <div id="carouselExampleIndicators" data-bs-interval="4000" class="carousel slide mx-auto img-thumbnail img-fluid" data-bs-ride="carousel">
         <div class="carousel-indicators img-fluid">
@@ -183,7 +182,6 @@
       </div>
 
     <div class="w3-main">
-
       <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
           <h2>Quienes somos</h2>
@@ -214,10 +212,26 @@
       </div>
     </div>
 
-
     <?php
       }
     ?>
+
+    <!-- Main content -->
+<div class="w3-main">
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <?php include_once($zones[$zone]['type'] . 's/' . $zone . '.php'); ?>
+
+    </div>
+    <div class="w3-third w3-container">
+      <?php
+        if ($zone != "inicio") {
+         include_once('pages/panel.php');
+        }
+      ?>
+    </div>
+  </div>
+</div>
 
     <!-- Sidebar -->
     <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="navbarNavDropdown">
@@ -233,18 +247,6 @@
 
     <!-- Overlay effect when opening sidebar on small screens -->
     <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-
-    <?php
-      if ($zone != "inicio") {
-       include_once('pages/panel.php');
-      }
-    ?>
-
-  <!-- <footer id="myFooter">
-   <div class="w3-container w3-theme-l2 w3-padding-52">
-      <h4>Footer</h4>
-    </div> -->
 
     <div class="w3-container w3-theme-l1 text-center">
       <p>Powered by <a href="#" target="_blank">LODO</a></p>
