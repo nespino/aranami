@@ -26,8 +26,8 @@
   </ul>
   <div>
     <h4>Clasificación toxicológica</h4>
-    <img src="img/er.jpg" alt="">
+    <img class="img-fluid" src="img/er.jpg" alt="">
     <h4>Centros toxicológicos</h4>
-    <img src="img/er2.jpg" alt="">
+    <img class="img-fluid" src="img/er2.jpg" alt="">
   </div>
 </div>

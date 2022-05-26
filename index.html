@@ -13,108 +13,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/aranami.css">
     <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
       <i class="fa fa-whatsapp my-float"></i>
     </a>
-    <style>
-      html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
-
-      .w3-sidebar {
-        z-index: 3;
-        width: 200px;
-        top: 43px;
-        bottom: 0;
-        height: inherit;
-      }
-
-      .float{
-	      position:fixed;
-	      width:60px;
-	      height:60px;
-	      bottom:40px;
-	      right:40px;
-	      background-color:#25d366;
-	      color:#FFF;
-	      border-radius:50px;
-	      text-align:center;
-        font-size:30px;
-	      box-shadow: 2px 2px 3px #999;
-        z-index:100;
-      }
-
-      .my-float{
-	      margin-top:16px;
-      }
-
-      .mySlides {
-        display: none;
-      }
-
-      .w3-button {
-        background-color: #07923a;
-      }
-
-      .w3-button.selected {
-        color: #000!important;
-        background-color: #ccc!important;
-      }
-
-      .navImg {
-        width: 105px;
-        height: 50px;
-        border: 1px solid rgba(7, 10, 7, 0.96);
-        border-radius: 20px;
-        margin-top: 4px;
-        margin-bottom: 4px;
-        cursor: pointer;
-      }
-
-      .navImg:hover {
-        border: 2px solid #07923a;
-      }
-
-      .navImg:active {
-        border: 1px solid #07923a;
-      }
-
-      .navImg:focus {
-        border: 1px solid #07923a;
-      }
-
-      @media (min-width: 993px) {
-        body nav.w3-sidebar.w3-bar-block {
-          display: none !important;
-        }
-      }  
-
-      @media (max-width: 992px) {
-        .navImg {
-          width: 80px;
-          height: 40px;
-        }
-      }
-
-      @media (max-width: 768px) {
-        .navImg {
-          width: 60px;
-          height: 30px;
-        }
-      }
-
-      #carouselExampleIndicators {
-        object-position: center;
-        overflow: hidden;
-        height:60vh;
-        width:100%;
-      }
-
-    </style>
   </head>
 
   <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <nav class="navbar navbar-expand-lg bg-success navbar-dark" id="hola">
       <div class="container-fluid">
         <a class="logo" href="inicio"><img class="navImg" src="img/menu_01.jpg" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -123,24 +31,24 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown" >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="inicio">Inicio</a>
+              <a class="nav-link active link-light" aria-current="page" href="inicio">Inicio</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link active dropdown-toggle link-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Productos
               </a>
               <ul class="dropdown-menu bg-success" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="insecticidas">Insecticidas</a></li>
-                <li><a class="dropdown-item" href="herbicidas">Herbicidas</a></li>
-                <li><a class="dropdown-item" href="curasemillas">Curasemillas</a></li>
-                <li><a class="dropdown-item" href="funguicidas">Funguicidas</a></li>
+                <li><a class="dropdown-item link-light" href="insecticidas">Insecticidas</a></li>
+                <li><a class="dropdown-item link-light" href="herbicidas">Herbicidas</a></li>
+                <li><a class="dropdown-item link-light" href="curasemillas">Curasemillas</a></li>
+                <li><a class="dropdown-item link-light" href="funguicidas">Funguicidas</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="comercializacion">Comercialización</a>
+              <a class="nav-link active link-light" href="comercializacion">Comercialización</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contacto">Contacto</a>
+              <a class="nav-link active link-light" href="contacto">Contacto</a>
             </li>
           </ul>
         </div>
@@ -184,8 +92,8 @@
     <div class="w3-main">
       <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
-          <h2>Quienes somos</h2>
-          <p>Nuestra empresa dio inicio a su actividad en el mercado durante la campaña agrícola 2002. 
+          <h2>Quiénes somos</h2>
+          <p>Nuestra empresa dió inicio a su actividad en el mercado durante la campaña agrícola 2002. 
             La cual gracias a nuestro esfuerzo y un invalorable apoyo de nuestros distribuidores  
             ha logrado una participación activa y creciente campaña tras campaña.
             Nuestro portfolio cuenta con productos que incluyen herbicidas, insecticidas, curasemillas y funguicidas 
@@ -199,15 +107,15 @@
           </p>
         </div>
         <div class="w3-third w3-container">
-          <a href="comercio"><p class="w3-border w3-padding-medium w3-padding-32 w3-center">Departamento de Comercio Exterior</p></a>
-          <a href="soja"><p class="w3-border w3-padding-xsmall w3-padding-8 w3-center">Cultivo de Soja</p></a>
-          <a href="trigo"><p class="w3-border w3-padding-xsmall w3-padding-8 w3-center">Cultivo de Trigo</p></a>
-          <a href="maiz"><p class="w3-border w3-padding-xsmall w3-padding-8 w3-center">Cultivo de Maíz</p></a>
-          <a href="girasol"><p class="w3-border w3-padding-xsmall w3-padding-8 w3-center">Cultivo de Girasol</p></a>
-          <a href="https://www.ggsa.com.ar/#/" target="_blank"><p class="w3-border w3-padding-medium w3-padding-32 w3-center">Mercado de Cereales</p></a>
-          <a href="https://www.accuweather.com/es/ar/buenos-aires/7894/daily-weather-forecast/7894"><p class="w3-border w3-padding-medium w3-padding-32 w3-center">Clima</p></a>
-          <a href="https://dolarhoy.com/"><p class="w3-border w3-padding-medium w3-padding-32 w3-center">Cotización del Dólar</p></a>
-          <a href="emergencias"><p class="w3-border w3-padding-medium w3-padding-32 w3-center">Emergencias</p></a>
+          <a href="comercio"><p class="rounded w3-border w3-padding-medium bg-success link-light w3-padding-32 w3-center">Departamento de Comercio Exterior</p></a>
+          <a href="soja"><p class=" rounded w3-padding-xsmall link-light w3-padding-8 w3-center" style="background-color: #28B463">Cultivo de Soja</p></a>
+          <a href="trigo"><p class="rounded w3-padding-xsmall link-light w3-padding-8 w3-center" style="background-color: #873600">Cultivo de Trigo</p></a>
+          <a href="maiz"><p class="rounded  w3-padding-xsmall link-light w3-padding-8 w3-center" style="background-color: #F7DC6F">Cultivo de Maíz</p></a>
+          <a href="girasol"><p class="rounded w3-padding-xsmall link-light w3-padding-8 w3-center" style="background-color: #E67E22">Cultivo de Girasol</p></a>
+          <a href="https://www.ggsa.com.ar/" target="_blank"><p class="rounded w3-border w3-padding-medium w3-padding-32 w3-center">Mercado de Cereales</p></a>
+          <a href="https://www.accuweather.com/es/ar/buenos-aires/7894/daily-weather-forecast/7894" target="_blank"><p class="rounded w3-border w3-padding-medium w3-padding-32 w3-center">Clima</p></a>
+          <a href="https://dolarhoy.com/"><p class="rounded w3-border w3-padding-medium w3-padding-32 w3-center" target="_blank">Cotización del Dólar</p></a>
+          <a href="emergencias"><p class="rounded w3-border w3-padding-medium w3-padding-32 w3-center">Emergencias</p></a>
         </div>
       </div>
     </div>
@@ -217,68 +125,24 @@
     ?>
 
     <!-- Main content -->
-<div class="w3-main">
-  <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
-      <?php include_once($zones[$zone]['type'] . 's/' . $zone . '.php'); ?>
-
+    <div class="w3-main">
+      <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+          <?php include_once($zones[$zone]['type'] . 's/' . $zone . '.php'); ?>
+        
+        </div>
+        <div class="w3-third w3-container">
+          <?php
+            if ($zone != "inicio") {
+             include_once('pages/panel.php');
+            }
+          ?>
+        </div>
+      </div>
     </div>
-    <div class="w3-third w3-container">
-      <?php
-        if ($zone != "inicio") {
-         include_once('pages/panel.php');
-        }
-      ?>
+
+    <!-- END MAIN -->
     </div>
-  </div>
-</div>
 
-    <!-- Sidebar -->
-    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="navbarNavDropdown">
-      <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-        <i class="fa fa-remove"></i>
-      </a>
-      <h4 class="w3-bar-item"><b>Menu</b></h4>
-      <a class="w3-bar-item w3-button w3-hover-black" href="#">Inicio</a>
-      <a class="w3-bar-item w3-button w3-hover-black" href="#">Productos</a>
-      <a class="w3-bar-item w3-button w3-hover-black" href="#">Com</a>
-      <a class="w3-bar-item w3-button w3-hover-black" href="#">Contacto</a>
-    </nav>
-
-    <!-- Overlay effect when opening sidebar on small screens -->
-    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-    <div class="w3-container w3-theme-l1 text-center">
-      <p>Powered by <a href="#" target="_blank">LODO</a></p>
-    </div>
-  </footer>
-
-<!-- END MAIN -->
-</div>
-
-  <script>
-    // Get the Sidebar
-    var mySidebar = document.getElementById("mySidebar");
-
-    // Get the DIV with overlay effect
-    var overlayBg = document.getElementById("myOverlay");
-
-    // Toggle between showing and hiding the sidebar, and add overlay effect
-    function w3_open() {
-      if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-        overlayBg.style.display = "none";
-      } else {
-        mySidebar.style.display = 'block';
-        overlayBg.style.display = "block";
-      }
-    }
-
-    // Close the sidebar with the close button
-    function w3_close() {
-      mySidebar.style.display = "none";
-      overlayBg.style.display = "none";
-    }
-  </script>
   </body>
 </html>

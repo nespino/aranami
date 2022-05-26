@@ -1,0 +1,86 @@
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+  margin-top:16px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.w3-button {
+  background-color: #07923a;
+}
+
+.w3-button.selected {
+  color: #000!important;
+  background-color: #ccc!important;
+}
+
+.navImg {
+  width: 105px;
+  height: 50px;
+  border: 1px solid rgba(7, 10, 7, 0.96);
+  border-radius: 20px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.navImg:hover {
+  border: 2px solid #07923a;
+}
+
+.navImg:active {
+  border: 1px solid #07923a;
+}
+
+.navImg:focus {
+  border: 1px solid #07923a;
+}
+
+@media (min-width: 993px) {
+  body nav.w3-sidebar.w3-bar-block {
+    display: none !important;
+  }
+}  
+
+@media (max-width: 992px) {
+  .navImg {
+    width: 80px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navImg {
+    width: 60px;
+    height: 30px;
+  }
+}
+
+#carouselExampleIndicators {
+  object-position: center;
+  overflow: hidden;
+  height:60vh;
+  width:100%;
+}
